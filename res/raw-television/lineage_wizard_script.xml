@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <!--
-     Copyright (C) 2022 The Portal Project
+     Copyright (C) 2016 The CyanogenMod Project
+     Copyright (C) 2017 The LineageOS Project
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -19,36 +20,36 @@
 <WizardScript xmlns:wizard="http://schemas.android.com/apk/res/com.google.android.setupwizard"
     wizard:firstAction="bluetooth_setup">
 
-    <WizardAction wizard:uri="intent:#Intent;action=org.portalrom.setupwizard.PORTALROM_BLUETOOTH_SETUP;end" id="bluetooth_setup">
+    <WizardAction wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_BLUETOOTH_SETUP;end" id="bluetooth_setup">
         <result wizard:action="welcome" />
     </WizardAction>
 
-    <WizardAction wizard:uri="intent:#Intent;action=org.portalrom.setupwizard.PORTALROM_WELCOME;end" id="welcome">
+    <WizardAction wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_WELCOME;end" id="welcome">
         <result wizard:action="locale" />
     </WizardAction>
-    <WizardAction wizard:uri="intent:#Intent;action=org.portalrom.setupwizard.PORTALROM_LOCALE;end" id="locale">
+    <WizardAction wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_LOCALE;end" id="locale">
         <result wizard:action="network_setup" />
     </WizardAction>
 
-    <WizardAction wizard:uri="intent:#Intent;action=org.portalrom.setupwizard.PORTALROM_NETWORK_SETUP;end" id="network_setup">
+    <WizardAction wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_NETWORK_SETUP;end" id="network_setup">
         <result wizard:action="device_specific" />
     </WizardAction>
 
-    <WizardAction wizard:uri="intent:#Intent;action=org.portalrom.setupwizard.DEVICE_SPECIFIC;end" id="device_specific">
+    <WizardAction wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.DEVICE_SPECIFIC;end" id="device_specific">
         <result wizard:action="recovery_update" />
     </WizardAction>
 
-    <WizardAction wizard:uri="intent:#Intent;action=org.portalrom.setupwizard.PORTALROM_RECOVERY_UPDATE;end" id="recovery_update">
-        <result wizard:action="portalrom_settings" />
+    <WizardAction wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_RECOVERY_UPDATE;end" id="recovery_update">
+        <result wizard:action="lineage_settings" />
     </WizardAction>
 
-    <WizardAction wizard:uri="intent:#Intent;action=org.portalrom.setupwizard.PORTALROM_SETTINGS;end" id="portalrom_settings">
+    <WizardAction wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_SETTINGS;end" id="lineage_settings">
         <result wizard:action="finish" />
     </WizardAction>
 
-    <WizardAction wizard:uri="intent:#Intent;action=org.portalrom.setupwizard.PORTALROM_SETUP_COMPLETE;end" id="finish">
+    <WizardAction wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_SETUP_COMPLETE;end" id="finish">
         <result wizard:action="exit" />
     </WizardAction>
-    <WizardAction wizard:uri="intent:#Intent;action=org.portalrom.setupwizard.EXIT;end" id="exit" />
+    <WizardAction wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.EXIT;end" id="exit" />
 
 </WizardScript>
