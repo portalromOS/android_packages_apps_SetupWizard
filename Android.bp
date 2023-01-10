@@ -35,7 +35,7 @@ android_app {
         "SettingsLib",
         "setupcompat",
         "setupdesign",
-        "org.lineageos.platform.internal",
+        "org.portalrom.platform.internal",
     ],
 
     libs: ["telephony-common"],
