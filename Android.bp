@@ -1,5 +1,5 @@
 //
-// Copyright (C) 2021 The LineageOS Project
+// Copyright (C) 2023 The PortalRom Project
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -40,13 +40,13 @@ android_app {
 
     libs: ["telephony-common"],
 
-    required: ["privapp_whitelist_org.lineageos.setupwizard"],
+    required: ["privapp_whitelist_org.portalrom.setupwizard"],
 }
 
 prebuilt_etc {
-    name: "privapp_whitelist_org.lineageos.setupwizard",
+    name: "privapp_whitelist_org.portalrom.setupwizard",
     system_ext_specific: true,
-    src: "privapp_whitelist_org.lineageos.setupwizard.xml",
+    src: "privapp_whitelist_org.portalrom.setupwizard.xml",
     sub_dir: "permissions",
     filename_from_src: true,
 }
